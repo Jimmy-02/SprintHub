@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: sprinthub-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sprinthub
+      POSTGRES_PASSWORD: sprinthub
+      POSTGRES_DB: sprinthub_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - sprinthub_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  sprinthub_postgres_data:
