@@ -14,7 +14,8 @@
     "@repo/types": "workspace:*",
     "cors": "latest",
     "dotenv": "latest",
-    "express": "latest"
+    "express": "latest",
+    "zod": "^4.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
